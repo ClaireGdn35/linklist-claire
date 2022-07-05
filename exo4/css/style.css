@@ -1,0 +1,191 @@
+/* === MISE EN PAGE GENERALE === */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+i {
+    color: white;
+    font-size: 20px;
+}
+
+/* === Clean === */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* === HERO === */
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #c36455, #b95b4c, #b05344, #a64a3b, #9d4233);
+}
+
+/* === NAVIGATION === */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: black;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    position: relative;
+    z-index: 20;
+}
+
+.logo{
+    position: relative;
+    z-index: 20;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding-top: 20%;
+    padding-left: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(-100%);
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    height: 50vh;
+}
+
+.menu li {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    color: black;
+    background: white;
+}
+
+/*MENU OPEN*/
+
+.open {
+    display: block !important;
+}
+
+.close {
+    display: none !important;
+}
+
+.nav-open .open {
+    display: none !important;
+}
+
+.nav-open .close {
+    display: block !important;
+}
+
+.nav-open .menu {
+    transform: translateX(0);
+}
+
+/* SECTION UNIVERS */
+
+.univers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.second_btn {
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.second_btn {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.second_btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.second_btn:hover {
+    background-color: white;
+    opacity: 0.75;
+    box-shadow: 5px 5px 0  black;
+}
+
+.second_btn a:hover {
+    color: black;
+}
+
+
+
+.networks {
+    margin-top: 40px;
+}
+
+.networks i {
+    margin: 0 10px;
+    transition: all 0.5s ease;
+}
+
+.networks i:hover{
+    transform: scale(1.25);
+}
